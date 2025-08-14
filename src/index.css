@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: monsterratLight;
+  src: url(/public/Fonts/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: primaryELight;
+  src: url(/public/Fonts/Montserrat-ExtraLight.ttf);
+}
+@font-face {
+  font-family: primary;
+  src: url(/public/Fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: primaryBold;
+  src: url(/public/Fonts/Montserrat-ExtraBold.ttf);
+}
+
+
+
+
+
+@theme {
+
+  /* Custom Colors */
+  --color-bg-body: #101828;
+  --color-secondary: #060010;
+  --color-secondary2: #a269ff;
+
+  /* Custom Fonts */
+
+  --font-primary1: inter, "monospace";
+  --font-secondary: fira, "sans-serif";
+  --font-primary: primary, "sans-serif";
+  --font-primaryBold: primaryBold, "sans-serif";
+  --font-primaryLight: monsterratLight, "sans-serif";
+  --font-primaryELight: primaryELight, "sans-serif";
+}
+
+.contactBtn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #ffffff80;
+  background: transparent;
+  cursor: pointer;
+
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+.contactBtn:hover {
+  color: #ffffff;
+  background: var(--secondary2); /* uses your theme color */
+  border: 1px solid var(--secondary2);
+  text-shadow: 0 0 5px #ffffff, 
+               0 0 10px #ffffff, 
+               0 0 20px #ffffff;
+  box-shadow: 0 0 5px var(--secondary), 
+              0 0 20px var(--secondary), 
+              0 0 50px var(--secondary),
+              0 0 100px var(--secondary);
+}
