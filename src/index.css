@@ -27,6 +27,7 @@
   --color-bg-body: #101828;
   --color-secondary: #060010;
   --color-secondary2: #a269ff;
+  --color-borderLight: #f1e6ff;
 
   /* Custom Fonts */
 
@@ -63,3 +64,39 @@
               0 0 50px var(--secondary),
               0 0 100px var(--secondary);
 }
+
+
+.water-fill {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cpath fill='%239933ff' fill-opacity='0.6' d='M0 100 Q50 80 100 100 T200 100 V200 H0 Z'%3E%3C/path%3E%3C/svg%3E")
+    repeat-x;
+  background-size: 200px 200px;
+  animation: wave 2s linear infinite;
+  transform: translateY(100%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.group:hover .water-fill {
+  transform: translateY(0%);
+}
+
+@keyframes wave {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 200px;
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+  100% { transform: rotate(-5deg); }
+}
+
+.animate-shake {
+  animation: shake 0.2s ease-in-out infinite;
+}
+
