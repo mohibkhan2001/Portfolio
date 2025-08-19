@@ -42,8 +42,9 @@ const About = () => {
     <motion.div 
     className="About h-[110vh] bg-secondary"
     data-aos="fade-up"
-    initial={{opacity: 0, translateX: "100%"}}
-    whileInView={{opacity:1, translateX: 0}}
+    initial={{opacity: 0}}
+    whileInView={{opacity:1,}}
+    transition={{duration: 0.5, delay: 1}}
     ease = "aniticipate"
     >
       <div className="  w-screen flex items-center flex-col gap-7 p-20 ">

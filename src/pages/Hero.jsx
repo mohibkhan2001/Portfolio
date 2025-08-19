@@ -2,8 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Buttons from "../components/Buttons";
 import SplitText from "../components/SplitText";
-
-// import React from "react";
+import ShinyText from "../components/ShinyText";
 
 const Hero = () => {
   return (
@@ -11,8 +10,12 @@ const Hero = () => {
       <Header />
       <div className="Hero w-full h-screen flex flex-col justify-center items-center m-auto font-primary">
         <div className="hero-text flex flex-col justify-center items-center gap-6">
-          <h1 className="text-8xl font-primaryBold text-white">Mohib Khan</h1>
-
+          <ShinyText
+            text="Mohib Khan"
+            disabled={false}
+            speed={3}
+            className="custom-class text-8xl font-primaryBold"
+          />
           <p className="text-3xl text-secondary2">Front End Developer</p>
           <SplitText
             text="Crafting interactive experiences with precision & creativity"
@@ -26,9 +29,9 @@ const Hero = () => {
             threshold={0.1}
             rootMargin="-100px"
             textAlign="center"
-            // onLetterAnimationComplete={handleAnimationComplete}
           />
         </div>
+
         <div className="hero-btns mt-12 flex gap-8">
           <Buttons
             text={"View My Work"}
