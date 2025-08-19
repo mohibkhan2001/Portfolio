@@ -1,13 +1,15 @@
-import React from "react";
+
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import TiltedCard from "../components/TiltedCard";
 import SplitText from "../components/SplitText";
-import mohibImg from "../assets/Images/mohibImg.webp";
+import mohibImg from "../assets/Images/mohibKhan.webp";
 import AboutCards from "../components/AboutCards";
 import { rocketIcon, codeIcon, paintIcon, usersIcon } from "../index";
+import {motion} from 'framer-motion';
 import Aos from "aos";
+
 
 const About = () => {
   useEffect((()=>{
@@ -37,7 +39,13 @@ const About = () => {
     },
   ];
   return (
-    <div className="About h-[110vh]"  data-aos="fade-up">
+    <motion.div 
+    className="About h-[110vh] bg-secondary"
+    data-aos="fade-up"
+    initial={{opacity: 0, translateX: "100%"}}
+    whileInView={{opacity:1, translateX: 0}}
+    ease = "aniticipate"
+    >
       <div className="  w-screen flex items-center flex-col gap-7 p-20 ">
         <h1 className="flex items-center gap-4 font-bold text-6xl">
           <span style={{ color: "white" }}>About</span>
@@ -109,13 +117,14 @@ const About = () => {
                   CardIcon={card.CardIcon}
                   CardTitle={card.CardTitle}
                   CardDesc={card.CardDesc}
+                  
                 />
               ))}
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

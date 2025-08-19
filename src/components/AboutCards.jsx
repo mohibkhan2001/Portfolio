@@ -1,5 +1,7 @@
 import React from "react";
 
+
+
 const AboutCards = ({ CardIcon, CardTitle, CardDesc }) => {
   return (
     <div className="hover:text-white transition-all duration-200 relative overflow-hidden  w-2/5 p-4 flex flex-col gap-2 rounded-lg group cursor-pointer">
