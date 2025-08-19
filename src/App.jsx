@@ -15,7 +15,7 @@ const App = () => {
   });
 
   // Scale About from 1 to 0.8 as you scroll through it
-  const aboutScale = useTransform(scrollYProgress, [0, 1], [1, 0.5]);
+  const aboutScale = useTransform(scrollYProgress, [0, 1], [1, 0.7]);
   // Fade About out as you scroll through it (optional)
   const aboutOpacity = useTransform(scrollYProgress, [0.7, 1], [1, 0]);
 
