@@ -2,19 +2,19 @@
 
 @font-face {
   font-family: monsterratLight;
-  src: url(/public/Fonts/Montserrat-Light.ttf);
+  src: url(/Fonts/Montserrat-Light.ttf);
 }
 @font-face {
   font-family: primaryELight;
-  src: url(/public/Fonts/Montserrat-ExtraLight.ttf);
+  src: url(/Fonts/Montserrat-ExtraLight.ttf);
 }
 @font-face {
   font-family: primary;
-  src: url(/public/Fonts/Montserrat-Regular.ttf);
+  src: url(/Fonts/Montserrat-Regular.ttf);
 }
 @font-face {
   font-family: primaryBold;
-  src: url(/public/Fonts/Montserrat-ExtraBold.ttf);
+  src: url(/Fonts/Montserrat-ExtraBold.ttf);
 }
 
 
@@ -130,4 +130,18 @@ body{
 
 .shiny-text.disabled {
   animation: none;
+}
+
+
+.About::after{
+  content: "";
+  position: absolute;
+  right: -70px;
+  bottom: -50px;
+  height: 300px ;
+  width: 300px;
+  background: var(--color-secondary2);
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0.7;
 }
