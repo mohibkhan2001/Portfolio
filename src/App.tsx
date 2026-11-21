@@ -109,14 +109,14 @@ function ProjectVisual({ type }: { type: string }) {
   if (type === 'shop') {
     return (
       <div className="mock project-image-mock">
-        <img src="../src/assets/crochet_nook.jpg" alt="The Crochet Nook storefront featuring a handmade crochet bouquet" />
+        <img src="/crochet_nook.jpg" alt="The Crochet Nook storefront featuring a handmade crochet bouquet" />
       </div>
     )
   }
   if (type === 'property') {
     return (
       <div className="mock project-image-mock">
-        <img src="../src/assets/fkh.png" alt="FirstKey Homes rental search homepage" />
+        <img src="/fkh.png" alt="FirstKey Homes rental search homepage" />
       </div>
     )
   }
@@ -197,7 +197,7 @@ export default function App() {
           </div>
           <div className="hero-art" ref={heroRef}>
             <div className="art-glow" />
-            <img src="../src/assets/mohib-hero-sculpture.png" alt="Abstract chrome and glass sculpture" />
+            <img src="/mohib-hero-sculpture.png" alt="Abstract chrome and glass sculpture" />
             <span className="tech-label label-react">React.js</span>
             <span className="tech-label label-js">JavaScript</span>
             <span className="tech-label label-node">Node.js</span>
